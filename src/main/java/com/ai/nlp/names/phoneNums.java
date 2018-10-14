@@ -19,7 +19,7 @@ public class phoneNums {
 
     /**
      * Phone method
-     * @param s for string return
+     * @param s for string return variaable
      * @return a true or false
      */
     private static boolean isPhoneNumber(String s) {
