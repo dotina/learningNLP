@@ -41,6 +41,7 @@ public class nameStrings {
                 String tokens[] = tokenizer.tokenize(sentence);
                 Span nameSpans[] = nameFinder.find(tokens);
                 double[] spanProberbilities = nameFinder.probs(nameSpans);
+
             }
         }catch (Exception e){
             e.printStackTrace();
