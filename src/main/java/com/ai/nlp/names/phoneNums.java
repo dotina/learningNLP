@@ -23,16 +23,7 @@ public class phoneNums {
      * @return a true or false
      */
     private static boolean isPhoneNumber(String s) {
-        if(s.matches("[0-9]{10}")){
-            return true;
-        }else if(s.matches("[0-9]{12}")){
-            return true;
-        }else if(s.matches("[0-9]{9}")) {
-            return true;
-        }else if(s.matches("\\(\\d{3}\\)\\d{3}\\s\\d{3}\\s\\d{3}")){
-            return true;
-        }else{
-            return false;
-        }
+        return s.matches("[0-9]{10}") || s.matches("[0-9]{12}") || s.matches("[0-9]{9}") || s.matches("\\(\\d{3}\\)\\d{3}\\s\\d{3}\\s\\d{3}");
+
     }
 }
