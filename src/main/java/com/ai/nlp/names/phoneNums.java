@@ -8,12 +8,13 @@ import static java.lang.System.out;
  */
 public class phoneNums {
     public static void phoneNumbers(){
-        out.println("phone number : 0722345354"+isPhoneNumber("0722345354"));
-        out.println("phone number : 254722345354"+isPhoneNumber("254722345354"));
-        out.println("phone number : 722345354"+isPhoneNumber("722345354"));
-        out.println("phone number : (254)722 345 354"+isPhoneNumber("(254)722 345 354"));
+        out.println("phone number : 0722345354 ->"+isPhoneNumber("0722345354"));
+        out.println("phone number : 254722345354 ->"+isPhoneNumber("254722345354"));
+        out.println("phone number : 722345354 ->"+isPhoneNumber("722345354"));
+        out.println("phone number : (254) 722 345 354 ->"+isPhoneNumber("(254)722 345 354"));
         out.println();
         out.println();
+
     }
 
     /**
@@ -26,9 +27,9 @@ public class phoneNums {
             return true;
         }else if(s.matches("[0-9]{12}")){
             return true;
-        }else if(s.matches("[0-9]{6}")) {
+        }else if(s.matches("[0-9]{9}")) {
             return true;
-        }else if(s.matches("\\(\\d{3}\\)\\s\\d{3}\\s\\d{3}")){
+        }else if(s.matches("\\(\\d{3}\\)\\d{3}\\s\\d{3}\\s\\d{3}")){
             return true;
         }else{
             return false;
