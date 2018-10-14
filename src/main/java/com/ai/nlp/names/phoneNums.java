@@ -18,13 +18,17 @@ public class phoneNums {
 
     /**
      * Phone method
-     * @param s for strign return
+     * @param s for string return
      * @return a true or false
      */
     private static boolean isPhoneNumber(String s) {
         if(s.matches("[0-9]{10}")){
             return true;
-        }else if(s.matches("\\d{3}\\s\\d{3}\\s\\d{4}")){
+        }else if(s.matches("[0-9]{12}")){
+            return true;
+        }else if(s.matches("[0-9]{6}")) {
+            return true;
+        }else if(s.matches("\\(\\d{3}\\)\\s\\d{3}\\s\\d{3}")){
             return true;
         }else{
             return false;
